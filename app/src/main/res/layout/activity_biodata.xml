@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BiodataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="36dp"
+                android:text="Form Identitas Mahasiswa"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:hint="Alamat"/>
+
+            <EditText
+                android:id="@+id/etHp"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:hint="No Hp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:hint="Email"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+
+            <TextView
+                android:id="@+id/tvkelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Jenis Kelamin"/>
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp">
+                <RadioButton
+                    android:id="@+id/Laki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-Laki"/>
+                <RadioButton
+                    android:id="@+id/Perempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvKelas"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Kelas"/>
+
+            <Spinner
+                android:id="@+id/Kspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/Kelas" />
+            <TextView
+                android:id="@+id/ValueKelas"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/tvUKM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="UKM Yang Diikuti" />
+
+            <CheckBox
+                android:id="@+id/cbAMCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="AMCC" />
+
+            <CheckBox
+                android:id="@+id/cbHIMSSI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="HIMSSI" />
+
+            <CheckBox
+                android:id="@+id/cbKOMA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="KOMA" />
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Simpan"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
